@@ -1,0 +1,1 @@
+$env:PORT=3000; $env:HOST='localhost'; npx tsx index.ts

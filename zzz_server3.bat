@@ -1,0 +1,1 @@
+$env:PORT=3000; npx tsx index.ts
