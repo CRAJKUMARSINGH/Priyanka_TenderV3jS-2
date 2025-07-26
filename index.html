@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Priyanka Tender V3</title>
+  <style>
+    body{font-family:sans-serif;margin:1rem}
+    label,button{display:block;margin:.5rem 0}
+  </style>
+</head>
+<body>
+  <h1>Dynamic Deduction</h1>
+  <label>Base Bid
+    <input id="base" type="number" value="1000">
+  </label>
+  <label>Deduction %
+    <input id="deduct" type="number" value="5" step="0.01">
+  </label>
+  <button onclick="calc()">Apply</button>
+  <p>Final Bid: <span id="final">—</span></p>
+
+  <script>
+    function calc() {
+      const b = +document.getElementById('base').value;
+      const d = +document.getElementById('deduct').value;
+      document.getElementById('final').textContent = (b * (1 - d/100)).toFixed(2);
+    }
+  </script>
+</body>
+</html>

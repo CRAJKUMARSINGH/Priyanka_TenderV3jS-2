@@ -1,0 +1,4 @@
+{
+  "name": "priyanka-tender",
+  "scripts": { "build": "echo 'No build step needed'" }
+}
